@@ -1,12 +1,12 @@
 #include "mbed.h"
 
-int main()
-{
-    DigitalIn B1_USER(BUTTON1);
-
-    DigitalOut LD1(LED1);
-
+DigitalOut myled(PC_13);
+int main(){
     while (true) {
-        LD1 = B1_USER;
+        myled = 1;
+        wait_us(1000);
+        myled = 0;
+        wait_us(1000);
+
     }
 }
