@@ -4,6 +4,7 @@ DigitalOut myled(PC_13);
 int main(){
     while (true)
     {
+        // cambio algunas cosas
         myled = 1;
         wait_us(500000);
         myled = 0;
