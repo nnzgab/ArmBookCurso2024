@@ -1,6 +1,6 @@
 #include "mbed.h"
 DigitalOut myled(PC_13);
-//pull antes de push
+//pull antes de push  fabrica fabrica
 int main(){
     while (true)
     {
