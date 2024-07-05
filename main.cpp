@@ -21,8 +21,11 @@
 #define	LED15	PA_11
 #define	LED16	PF_6
 
+#define	LEDTEC	PF_1
+
 #define ON 1
 #define OFF !ON
+/*
 DigitalOut ledZona1(LED1);
 DigitalOut ledZona2(LED2);
 DigitalOut ledZona3(LED3);
@@ -39,6 +42,9 @@ DigitalOut ledZona13(LED13);
 DigitalOut ledZona14(LED14);
 DigitalOut ledZona15(LED15);
 DigitalOut ledZona16(LED16);
+*/
+
+DigitalOut ledTec(LEDTEC);
 
 
 #DigitalOut myled(PC_13);
@@ -47,11 +53,11 @@ int main(){
     while (true)
     {
         // cambio algunas cosas
-        ledZona1 = ON;
+        ledTec = ON;
         wait_us(500000);
-        ledZona1 = OFF;
+        ledTec = OFF;
     	wait_us(500000);
-    	
+    	/*
     	ledZona1 = ON;
         wait_us(500000);
         ledZona1 = OFF;
@@ -86,6 +92,6 @@ int main(){
         wait_us(500000);
         ledZona8 = OFF;
     	wait_us(500000);
-        
+        */
     }
 }
